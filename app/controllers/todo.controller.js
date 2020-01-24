@@ -1,5 +1,5 @@
 const db = require('../models');
-const Todo = db.todo;
+const Todo = db.Todo;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {

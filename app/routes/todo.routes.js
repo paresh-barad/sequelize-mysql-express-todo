@@ -1,11 +1,13 @@
 module.exports = app => {
+	const customAuthMiddleware = require('../middleware/customauth.middleware');
+
 	const todo = require('../controllers/todo.controller');
 
 	var router = require('express').Router();
 
 	router.post('/', todo.create);
 
-	router.get('/', todo.findAll);
+	router.get('/', customAuthMiddleware, todo.findAll);
 
 	router.get('/:id', todo.findOne);
 
