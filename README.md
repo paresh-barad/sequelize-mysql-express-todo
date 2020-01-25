@@ -17,7 +17,7 @@ If you think this source code is useful, it will be great if you just give it st
 `node server.js`
 
 # Database jwt Configration for server
-Global variables such as mysql host, user, password and database can be set in config/db.config.js
+Global variables such as mysql host, user, password and database can be set in `config/db.config.js`
 
 **Restful API**<br/>
 An api with the following routes
